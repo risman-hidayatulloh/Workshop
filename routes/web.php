@@ -11,6 +11,12 @@
 |
 */
 
+//Route tampilan awal
 Route::get('/', function () {
-    return view('welcome');
+    return view('workshopVue');
 });
+
+//Route untuk /home ketika direfresh tidak tulisan Sorry, the page you are looking for could not be found.
+Route::get('/{name}', function(){
+	return redirect('/');
+})->where('name', '[A-Za-z]+');
