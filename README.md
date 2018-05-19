@@ -36,6 +36,13 @@ $ git push -u origin master
 
 $ git status                      (On Branch Master)
 
+migration :
+php artisan make:model nama_model -m -r
+
+php artisan migrate
+
+$ npm install axios   : https://github.com/axios/axios
+
 
 referensi :
 https://www.youtube.com/watch?v=J_ayfPetE2M&list=PLe30vg_FG4OSl8zlikYc_RLkfueqAMUb_
